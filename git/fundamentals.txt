@@ -1,0 +1,140 @@
+//prent working directory
+pwd
+
+//Go Desktop
+cd Desktop
+
+//show user infos
+git config --list
+
+//update infos
+git config --global user.email waapsitee@gmail.com
+
+//Initialized empty Git repository in this directory
+git init
+
+//status
+git status
+
+//add staging area
+git add . //. all 
+
+//commit localrepo
+git commit -m 'description'
+//or
+git commit //after 'esc' after save :x!
+
+//commit only one change
+git commit -am "update index.html"
+
+//create new file
+touch text.txt
+
+//remove file
+rm test.css
+
+//prev file
+cd ..
+
+//add all changes to staging area
+git add -A
+
+//all files
+ls -al
+
+//rename
+mv text.txt readme.txt
+
+//git status show short
+git status -s
+
+
+
+//---RESTORE----
+
+//staged restore
+git restore --staged index.html
+
+//restore working directory
+git restore index.html
+
+
+//last change
+git show
+
+//all change
+git log
+//git log one line
+git log --oneline
+//2 of the last
+git log -p -2
+//in the last 30 minutes
+git log --since=30minutes //5hours //1day/1week
+
+
+//time machine
+git checkout afbdccd
+
+//time machine master
+git checkout master
+
+//revert
+git revert 69100ef
+
+
+
+//-----Reset-----
+
+//soft only localrepo
+git reset --soft afbdccd
+
+// localrepo and staging area
+git reset --mixed afbdccd
+
+//localrepo and staging area and work direitory
+git reset --hard afbdccd 
+
+or git reset hard/mixed/soft
+
+//ignore
+touch .gitignore
+
+
+//remove cached
+git rm -r --cached .
+
+
+//---Branch----
+
+//create branch
+-git branch cssbranch
+-git branch htmlbranch
+
+//show branch
+git branch
+
+//switch branch
+git checkout cssbranch
+
+//branch create and switch
+git checkout -b cssfeature
+
+
+//branch merge
+git merge
+
+//branch delete
+ git branch -d cssfeature
+
+
+
+
+-----create directory /
+mkdir gitDirectory
+
+
+
+
+
+
+
