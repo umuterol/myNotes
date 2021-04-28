@@ -1,0 +1,22 @@
+//remote
+git remote add origin https://github.com/umuterol/starter.git
+
+//push
+git push -u origin master
+//push cssfeature branch
+git push origin cssfeature
+//push
+git push
+
+//clone
+git clone https://github.com/umuterol/genesis.git
+
+//show remote
+git remote -v
+
+//get change from remote
+git fetch // save the change in memory.
+git merge // download //:wq
+
+//pull
+git pull
